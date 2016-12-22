@@ -5,8 +5,9 @@ default['metricbeat']['package_url'] = 'auto'
 default['metricbeat']['packages'] = []
 default['metricbeat']['notify_restart'] = true
 default['metricbeat']['windows']['base_dir'] = 'C:/opt/metricbeat'
+metricbeat_arch = node['kernel']['machine'] =~ /x86_64/ ? 'x86_64' : 'x86'
 default['metricbeat']['conf_dir'] = if node['platform'] == 'windows'
-                                      "#{node['metricbeat']['windows']['base_dir']}/metricbeat-#{node['metricbeat']['version']}-windows"
+                                      "#{node['metricbeat']['windows']['base_dir']}/metricbeat-#{node['metricbeat']['version']}-windows-#{metricbeat_arch}"
                                     else
                                       '/etc/metricbeat'
                                     end

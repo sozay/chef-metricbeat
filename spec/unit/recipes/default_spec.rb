@@ -88,7 +88,7 @@ describe 'metricbeat::default' do
     end
 
     it 'configure C:/opt/metricbeat/metricbeat.yml' do
-      expect(chef_run).to create_file('C:/opt/metricbeat/metricbeat-5.1.1-windows/metricbeat.yml')
+      expect(chef_run).to create_file('C:/opt/metricbeat/metricbeat-5.1.1-windows-x86_64/metricbeat.yml')
     end
 
     it 'enable metricbeat service' do

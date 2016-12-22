@@ -1,7 +1,7 @@
 metricbeat Cookbook
 ================
 
-[![Cookbook](http://img.shields.io/badge/cookbook-v0.2.0-green.svg)](https://github.com/vkhatri/chef-metricbeat)[![Build Status](https://travis-ci.org/vkhatri/chef-metricbeat.svg?branch=master)](https://travis-ci.org/vkhatri/chef-metricbeat)
+[![Cookbook](http://img.shields.io/badge/cookbook-v0.2.0-green.svg)](https://github.com/sozay/chef-metricbeat)[![Build Status](https://travis-ci.org/sozay/chef-metricbeat.svg?branch=master)](https://travis-ci.org/sozay/chef-metricbeat)
 
 This is a [Chef] cookbook to manage [metricbeat].
 
@@ -18,12 +18,12 @@ cookbook 'metricbeat', '~> 0.2.0'
 ## From Git
 
 ```
-cookbook 'metricbeat', github: 'vkhatri/chef-metricbeat'
+cookbook 'metricbeat', github: 'sozay/chef-metricbeat'
 ```
 
 ## Repository
 
-https://github.com/vkhatri/chef-metricbeat
+https://github.com/sozay/chef-metricbeat
 
 
 ## Supported OS
@@ -132,5 +132,5 @@ limitations under the License.
 
 [Chef]: https://www.chef.io/
 [metricbeat]: https://www.elastic.co/downloads/beats/metricbeat
-[Contributors]: https://github.com/vkhatri/chef-metricbeat/graphs/contributors
+[Contributors]: https://github.com/sozay/chef-metricbeat/graphs/contributors
 
