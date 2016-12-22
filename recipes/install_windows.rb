@@ -35,9 +35,9 @@ end
 windows_zipfile node['metricbeat']['windows']['base_dir'] do
   source package_file
   action :unzip
-  not_if { ::File.exist?(node['metricbeat']['windows']['base_dir'] + "/metricbeat-#{node['metricbeat']['version']}-windows" + '/install-service-metricbeat.ps1') }
+  not_if { ::File.exist?(node['metricbeat']['windows']['base_dir'] + "/metricbeat-#{node['metricbeat']['version']}-windows-#{metricbeat_arch}" + '/install-service-metricbeat.ps1') }
 end
 
 powershell_script 'install metricbeat as service' do
-  code "#{node['metricbeat']['windows']['base_dir']}/metricbeat-#{node['metricbeat']['version']}-windows/install-service-metricbeat.ps1"
+  code "#{node['metricbeat']['windows']['base_dir']}/metricbeat-#{node['metricbeat']['version']}-windows-#{metricbeat_arch}/install-service-metricbeat.ps1"
 end
